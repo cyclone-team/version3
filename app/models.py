@@ -1,9 +1,9 @@
 import json
-from flask_login import UserMixin
+
 from .exts import db
 
 # 用户实体类 数据表user
-class User(db.Model,UserMixin):
+class User(db.Model):
     # 表名
     __tablename__ = 'user'
 
